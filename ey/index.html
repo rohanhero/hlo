@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base Class-Based View ModelForm CRUD Project</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .hi {
+        background-color: hotpink;
+        color: darkred;
+        padding: 10px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 22px;
+        border-radius: 5px;
+        margin: 20px auto;
+        width: 1080px;
+      }
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .form-section {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+      }
+      .table-section {
+        width: 400px;
+      }
+      label {
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 8px;
+        border: 1px solid #ccc;
+      }
+      .action-buttons {
+        display: flex;
+      }
+      .action-buttons button {
+        padding: 5px 10px;
+        margin: 0 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 12px;
+      }
+      .edit-button {
+        background-color: #ffa500; /* Orange */
+        color: white;
+      }
+      .delete-button {
+        background-color: #ff4500; /* Red */
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="hi">Base Class-Based View Model Form CRUD Project</h1>
+    <div class="container">
+      <div class="form-section">
+        <h2>Add New Student</h2>
+        <form>
+          <label for="name">Name:</label>
+          <br />
+          <input type="text" id="name" name="name" />
+          <br />
+          <label for="email">Email:</label>
+          <br />
+          <input type="email" id="email" name="email" />
+          <br />
+          <label for="password">Password:</label>
+          <br />
+          <input type="password" id="password" name="password" />
+          <br /><br />
+          <button type="submit">Add</button>
+        </form>
+      </div>
+      <div class="table-section">
+        <h2>Show Student Information</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Password</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>aaradhya</td>
+              <td>rohan111@gmail.com</td>
+              <td>ishika</td>
+              <td class="action-buttons">
+                <button class="edit-button">Edit</button>
+                <button class="delete-button">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>aayusha</td>
+              <td>aayush111@gmail.com</td>
+              <td>samikshya</td>
+              <td class="action-buttons">
+                <button class="edit-button">Edit</button>
+                <button class="delete-button">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>grishma</td>
+              <td>ashok111@gmail.com</td>
+              <td>sadikshya</td>
+              <td class="action-buttons">
+                <button class="edit-button">Edit</button>
+                <button class="delete-button">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
